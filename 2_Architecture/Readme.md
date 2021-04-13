@@ -2,16 +2,15 @@
 
 ## High Level Design 
 * Sequence Diagram :
-![SequenceDiagram](2_Architecture\Sequence diagram.png)
+![SequenceDiagram](https://github.com/PothuNikhil/255906_Online_Voting/blob/main/2_Architecture/Sequence%20diagram.png)
 * Component Diagram :
-![ComponentDiagram](2_Architecture\component.png)
+![ComponentDiagram](https://github.com/PothuNikhil/255906_Online_Voting/blob/main/2_Architecture/component.png)
 
 
 
 ## Low Level Design 
-
---- TBD Structural and Behavioural Diagram
+* Structural and Behavioural Diagram
 * Flow Chart :
-![Flow chart](2_Architecture\flowchart.png)
+![Flow chart](https://github.com/PothuNikhil/255906_Online_Voting/blob/main/2_Architecture/flowchart.png)
 * Usecase Diagram :
-![UsecaseDiagram](2_Architecture\usecase.png)
+![UsecaseDiagram](https://github.com/PothuNikhil/255906_Online_Voting/blob/main/2_Architecture/usecase.png)
