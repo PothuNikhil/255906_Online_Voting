@@ -28,7 +28,7 @@ Feature | Cost | Time
 
 
 ## SWOT ANALYSIS
-![SWOT Analysis](1_Requirement\SWOT.png)
+![SWOT Analysis](https://github.com/PothuNikhil/255906_Online_Voting/blob/main/1_Requirement/SWOT.png)
 
 # 4W&#39;s and 1&#39;H
 
