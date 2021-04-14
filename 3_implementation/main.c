@@ -35,7 +35,7 @@ int main()
     int stop = 0;
     unsigned long long n;
 //    struct node *q;
-    int q;
+    error_t q;
     int flag=0;
     char na[50];
     struct node *root1 = NULL;
@@ -60,13 +60,13 @@ int main()
                 {
                     if(flag == 0)
                     {
-                        fscanf(ptr_file,"%llu %d %[^\n]s",&n,&ag,na);
+                        fscanf(ptr_file,"%llu %d %49[^\n]s",&n,&ag,na);
                         root1 = insert(root1,n,ag,na);
                         flag = 1;
                     }
                     else
                     {
-                        fscanf(ptr_file, "%llu %d %[^\n]s",&n,&ag,na);
+                        fscanf(ptr_file, "%llu %d %49[^\n]s",&n,&ag,na);
                         insert(root1,n,ag,na);
                         flag++;
                         //printf("if dont wnna continue press 0");
@@ -83,7 +83,7 @@ int main()
         scanf("%llu",&p);
         clock_t begin = clock();
         q = search(root1,p);
-        if(q == 1)
+        if(q == Success)
         {
            printf("1)Vote A\n2)Vote B\n3)Vote C\n");
            scanf("%d",&t);
@@ -111,6 +111,6 @@ int main()
 
     return 0;
 }
-
+//edited
 
 
