@@ -18,7 +18,7 @@ void setUp()
 void tearDown()
 {
 }
-void  search_Valid_aadhar(void){
+void  search_Valid_aadhar(){
     //open_file("randno.txt","r",&fptr);
     //fscanf(fptr,"%llu %d %[^\n]s",&aadhar,&age,iname);
     aadhar=101369133068;
@@ -27,7 +27,7 @@ void  search_Valid_aadhar(void){
     root=insert(root,aadhar,age,iname);
     TEST_ASSERT_EQUAL(Success,search(root,aadhar));
 }
-void search_invalid_age(void){
+void search_invalid_age(){
     root=NULL;
     aadhar=101101513928;
     age=2;
@@ -35,7 +35,7 @@ void search_invalid_age(void){
     root=insert(root,aadhar,age,iname);
     TEST_ASSERT_EQUAL(Not_Eligible,search(root,aadhar));
 }
-void invalid_aadhar(void){
+void invalid_aadhar(){
     //root=NULL;
     aadhar=101101513929;
     age=2;
@@ -43,7 +43,7 @@ void invalid_aadhar(void){
     //root=insert(root,aadhar,age,iname);
     TEST_ASSERT_EQUAL(Invalid_user,search(root,aadhar));
 }
-void insert_checking(void){
+void insert_checking(){
     root=NULL;
     aadhar=101369133068;
     age=67;
