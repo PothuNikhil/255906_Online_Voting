@@ -34,7 +34,6 @@ struct node* insert(struct node* Node,unsigned long long item,int age,char iname
     {
 		//printf("ROOT Added\n");
         return newNode(item,age,iname);
-
     }
 
     else{
@@ -52,7 +51,7 @@ struct node* insert(struct node* Node,unsigned long long item,int age,char iname
                   printf("Added %llu LL of %llu\n",curr_node->left_left->aadhno,curr_node->aadhno);
 
 
-                  return NULL;
+                  return (struct node*)Left_Left;
               }
               curr_node=curr_node->left_left;
           }
@@ -64,7 +63,7 @@ struct node* insert(struct node* Node,unsigned long long item,int age,char iname
                   curr_node->left_right=newNode(item,age,iname);
                   printf("Added %llu LR of %llu\n",curr_node->left_right->aadhno,curr_node->aadhno);
 
-                  return NULL;
+                  return (struct node*)Left_Right;
 
               }
                 curr_node=curr_node->left_right;
@@ -76,7 +75,7 @@ struct node* insert(struct node* Node,unsigned long long item,int age,char iname
      //      newnode(value);
            curr_node->left=newNode(item,age,iname);
             printf("Added %llu L of %llu\n",curr_node->left->aadhno,curr_node->aadhno);
-           return NULL;
+           return (struct node*)Left;
 
         }
     }
@@ -93,7 +92,7 @@ struct node* insert(struct node* Node,unsigned long long item,int age,char iname
                     curr_node->right_left=newNode(item,age,iname);
                     printf("Added %llu RL of %llu\n",curr_node->right_left->aadhno,curr_node->aadhno);
 
-                    return NULL;
+                    return (struct node*)Right_left;
 
                 }
                  curr_node=curr_node->right_left;
@@ -106,9 +105,9 @@ struct node* insert(struct node* Node,unsigned long long item,int age,char iname
                 {
          //newnode(value);
                     curr_node->right_right=newNode(item,age,iname);
-                                     printf("Added %llu RR of %llu\n",curr_node->right_right->aadhno,curr_node->aadhno);
+                    printf("Added %llu RR of %llu\n",curr_node->right_right->aadhno,curr_node->aadhno);
 
-                    return NULL;
+                    return (struct node*)Right_Right;
 
                 }
                 curr_node=curr_node->right_right;
@@ -122,7 +121,7 @@ struct node* insert(struct node* Node,unsigned long long item,int age,char iname
           //  newnode(value);
             curr_node->right=newNode(item,age,iname);
             printf("Added %llu R of %llu\n",curr_node->right->aadhno,curr_node->aadhno);
-            return NULL;
+            return (struct node*)Right;
         }
 
     }

@@ -16,7 +16,16 @@ typedef enum error_t{
     Success=0,
     Invalid_user=1,
     Not_Eligible=2
-}error_t; 
+}error_t;
+typedef enum error_t_1{
+    root1=-1,
+    Left=0,
+    Right,
+    Left_Left,
+    Left_Right,
+    Right_Right,
+    Right_left
+}error_t_1; 
 struct node
 {
     unsigned long long aadhno;

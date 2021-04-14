@@ -43,6 +43,37 @@ void invalid_aadhar(void){
     //root=insert(root,aadhar,age,iname);
     TEST_ASSERT_EQUAL(Invalid_user,search(root,aadhar));
 }
+void insert_checking(void){
+    root=NULL;
+    aadhar=101369133068;
+    age=67;
+    strcpy(iname,"RamGandhi");
+    root=insert(root,aadhar,age,iname);
+    aadhar=101101513928;
+    age=2;
+    strcpy(iname,"AbhishekVerma");
+    TEST_ASSERT_EQUAL(Left,insert(root,aadhar,age,iname));
+    aadhar=101734575197;
+    age=24;
+    strcpy(iname,"NamanDeshpande");
+    TEST_ASSERT_EQUAL(Right,insert(root,aadhar,age,iname));
+    aadhar=101129566412;
+    age=26;
+    strcpy(iname,"BharathDighe");
+    TEST_ASSERT_EQUAL(Left_Right,insert(root,aadhar,age,iname));
+    aadhar=101025202361;
+    age=27;
+    strcpy(iname,"VishamLokhande");
+    TEST_ASSERT_EQUAL(Left_Left,insert(root,aadhar,age,iname));
+    aadhar=101374344042;
+    age=50;
+    strcpy(iname,"AartiDongre");
+    TEST_ASSERT_EQUAL(Right_left,insert(root,aadhar,age,iname));
+    aadhar=101937477083;
+    age=27;
+    strcpy(iname,"IndrajeetLeone");
+    TEST_ASSERT_EQUAL(Right_Right,insert(root,aadhar,age,iname));
+}
 void file_exist(){
 	TEST_ASSERT_EQUAL(Success,open_file("randno.txt","r", &fptr));
 	TEST_ASSERT_EQUAL(File_Not_found,open_file("test.txt","r", &fptr) );
@@ -59,6 +90,7 @@ int main(void)
     RUN_TEST(search_Valid_aadhar);
     RUN_TEST(search_invalid_age);
     RUN_TEST(invalid_aadhar);
+    RUN_TEST(insert_checking);
     //added test cases
     /* Close the Unity Test Framework */
     return UNITY_END();
