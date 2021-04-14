@@ -13,7 +13,9 @@
 typedef enum error_t{
     File_Not_found = -1,
     /* ERROR_NULL_PTR = -1, */
-    Success=0
+    Success=0,
+    Invalid_user=1,
+    Not_Eligible=2
 }error_t; 
 struct node
 {
@@ -25,6 +27,6 @@ struct node
 error_t open_file(char* addr,char* mode,FILE **ptr);
 struct node *newNode(unsigned long long item,int ge,char iname[50]);
 struct node* insert(struct node* Node,unsigned long long item,int age,char iname[50]);
-int search(struct node* root,unsigned long long val);
+error_t search(struct node* root,unsigned long long val);
 void Vote(int choice);
 #endif
