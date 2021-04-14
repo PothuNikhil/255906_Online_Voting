@@ -32,7 +32,7 @@ struct node* insert(struct node* Node,unsigned long long item,int age,char iname
 
 	if(curr_node==NULL)
     {
-		printf("ROOT Added\n");
+		//printf("ROOT Added\n");
         return newNode(item,age,iname);
 
     }
@@ -75,7 +75,7 @@ struct node* insert(struct node* Node,unsigned long long item,int age,char iname
         {
      //      newnode(value);
            curr_node->left=newNode(item,age,iname);
-                                     printf("Added %llu L of %llu\n",curr_node->left->aadhno,curr_node->aadhno);
+            printf("Added %llu L of %llu\n",curr_node->left->aadhno,curr_node->aadhno);
            return NULL;
 
         }
