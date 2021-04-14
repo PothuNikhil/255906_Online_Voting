@@ -14,7 +14,7 @@ Can easily store and Retrive Aadhar data
 ## Cost and Features
 Feature | Cost | Time
 | ----- | ----- | ----- |
-|       |   Low | 10    |
+| E-voting|   Low | 10    |
 
 ## Defining Our System
 ### Explanation
@@ -50,20 +50,18 @@ If he is above 18 then he can vote.
 
 | ID | Description | Category | Status | 
 | ----- | ----- | ------- | ---------|
-| HR01 | Data from file should be able to read | Techincal | TBD-S1 | 
-| HR02 | Data should be inserted in the form of Binary Search tree| Techincal | TBD-S1 |
-| HR03 | Voter shall enter Aadhar number  | Techincal | TBD-S1 |
-| HR04 | Adhar number shall be searched in BST | Techincal | TBD-S1 |
-| HR05 | Verifying Age of the Voter | Techincal | TBD-S1 |
+| HR01 | Data from file should be able to read | Techincal | Implemented | 
+| HR02 | Data should be inserted in the form of Binary Search tree| Techincal | Implemented |
+| HR03 | Voter shall enter Aadhar number  | Techincal | Implemented |
+| HR04 | Adhar number shall be searched in BST | Techincal | Implemented |
+| HR05 | Verifying Age of the Voter | Techincal | Implemented |
 | HR06 | Data should not be lost in case of faliure | Scenario | FUTURE |
-| HR07 | Data should always be stored when closing the system | Scenario | TBD-S1 |
 ### Low level Requirements
  
 | ID | Description | HLR ID | Status (Implemented/Future) |
 | ------ | --------- | ------ | ----- |
-| LR01 | File which contains Aadhar age and name of the voter shall be opened. | HR01 | TBD-S1 |
-| LR02 | If opening the file fails, then the system shloud prompt the message "Unable to access file" and should not end the program execution | HR01 | TBD-S1 |
-| LR03 | Reading Voter data should be possible in 2 ways, first being by searching by Aadhar number and second by printing all the records available | HR04 | TBD-S1 |
-| LR04 | If voter searches for an invalid Aadhar number "No Record Found" message should be displayed | HR03 | TBD-S1 |
-| LR05 | If voter enters valid Aadhar number check his age if he is above 18 he can proceed to vote | HR05 | TBD-S1 |
-| LR06 | When user Log off the system, message shall be prompted asking the user to save new records to file before exiting or not | HR07 | TBD-S1 |
+| LR01 | File which contains Aadhar age and name of the voter shall be opened. | HR01 | Implemented |
+| LR02 | If opening the file fails, then the system shloud prompt the message "Unable to access file" and should not end the program execution | HR01 | Implemented |
+| LR03 | Reading Voter data should be possible in 2 ways, first being by searching by Aadhar number and second by printing all the records available | HR04 | Implemented |
+| LR04 | If voter searches for an invalid Aadhar number "No Record Found" message should be displayed | HR03 | Implemented |
+| LR05 | If voter enters valid Aadhar number check his age if he is above 18 he can proceed to vote | HR05 | Implemented |
