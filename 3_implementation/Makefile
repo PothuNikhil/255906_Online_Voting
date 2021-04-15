@@ -55,7 +55,6 @@ debug:
 valgrind:
 	valgrind ./$(TEST_PROJ_NAME).$(EXEC)
 
-
 clean:
 	$(RM) *.DAT
 	$(RM) *.$(EXEC)
