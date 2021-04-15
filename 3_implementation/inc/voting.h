@@ -80,7 +80,7 @@ error_t search(struct node* root,unsigned long long val);
 /**
  * @brief function to input the voting
  * 
- * @param choice VOTE
+ * @param choice Voting choice
  */
 void Vote(int choice);
 #endif
